@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements Session.SessionLi
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
     }
 
+    //Subscriber
     @AfterPermissionGranted(123)
     private void requestPermission() {
         String[] peram = {Manifest.permission.CAMERA, Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO};
